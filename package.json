@@ -1,0 +1,27 @@
+{
+  "name": "corseconcierge.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pcss": "postcss -c postcss.config.json -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corseconcierge/corseconcierge.github.io.git"
+  },
+  "author": "Martyn Hoyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corseconcierge/corseconcierge.github.io/issues"
+  },
+  "homepage": "https://github.com/corseconcierge/corseconcierge.github.io#readme",
+  "devDependencies": {
+    "cssnano": "^3.9.1",
+    "postcss": "^5.2.8",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0"
+  }
+}

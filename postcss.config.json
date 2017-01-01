@@ -1,0 +1,14 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-cssnext"
+  ],
+  "input": "./css/src/index.css",
+  "output": "./css/bundle.css",
+  "postcss-cssnext": {
+    "browsers": "last 5 versions"
+  },
+  "cssnano": {
+    "autoprefixer": false
+  }
+}

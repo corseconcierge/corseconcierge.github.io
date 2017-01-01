@@ -1,0 +1,14 @@
+:root {
+
+	@custom-media --sm (min-width: 768px);
+
+  --cc-grey: #6e6e6e;
+  --cc-white: #fff;
+  --cc-yellow: #ffcb08;
+
+
+	--container-sm: 40em;
+	--container-xs: 100%;
+
+  --font-family-sans-serif: 'Philosopher', sans-serif;
+}
