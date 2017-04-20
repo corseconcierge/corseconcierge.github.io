@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/bundle.css" rel="stylesheet">
   </head>
-  <body class="page-home">
+  <body class="page-contact-us">
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <symbol id="icon-mail-envelope-closed" viewBox="0 0 32 32">
@@ -81,17 +81,90 @@
       </div>
     </nav>
     <div class="wrapper">
-      <main class="maincontent" id="maincontent">
-        <dl class="definition">
-          <dt>Corse:</dt>
-          <dd>Italian, plural feminine, race, short trip.</dd>
-          <dt>Concierge:</dt>
-          <dd>French, a contraction of "comte des cierges" – "count of candles"; a servant responsible for maintaining the lighting and cleanliness of medieval palaces.</dd>
-        </dl>
-        <div class="subtitle">
-          <h2 class="strapline">Keeping your business on track</h2>
-          <a class="cta" href="/services.html">Explore our services</a>
-        </div>
+      <main id="maincontent">
+        <header class="page-header">
+          <h1 class="h-level-1 page-header__title"><small class="pagetitle-short">Contact</small> <span class="pagetitle-concatenator">or</span> <span class="pagetitle-friendly">Talk to us</span></h1>
+        </header>
+        <section class="contact">
+          <section class="contact__item">
+            <h2>Start a conversation</h2>
+            <dl class="contact-links">
+              <dt class="contact-links__title">Email</dt>
+              <dd class="contact-links__data">
+                <a class="contact-links__link--email" href="mailto:hello@corseconcierge.com">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail-envelope-closed"></use>
+                  </svg>
+                  hello@corseconcierge.com
+                </a>
+              </dd>
+              <dt class="contact-links__title">Twitter</dt>
+              <dd class="contact-links__data">
+                <a class="contact-links__link--twitter" href="https://twitter.com/corseconcierge">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                  </svg>
+                  @CorseConcierge
+                </a>
+              </dd>
+              <dt class="contact-links__title">Facebook</dt>
+              <dd class="contact-links__data">
+                <a class="contact-links__link--facebook" href="https://facebook.com/corseconcierge">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                  </svg>
+                  /CorseConcierge
+                </a>
+              </dd>
+              <dt class="contact-links__title">Instagram</dt>
+              <dd class="contact-links__data">
+                <a class="contact-links__link--instagram" href="https://instagram.com/corseconcierge">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+                  </svg>
+                  /CorseConcierge
+                </a>
+              </dd>
+            </dl>
+          </section>
+          <section class="contact__item">
+            <h2>Leave a message</h2>
+            <form class="contact-form" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfBdKwP8nc8xInHaOXiAMFxnTuUWt67fVR8WzR8NGs_7NVNYY/exec">
+              <div class="form-group">
+                <label class="form-group__label">Name</label>
+                <div class="form-group__control" for="name">
+                  <input class="form-group__input" id="name" name="name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label">Email address</label>
+                <div class="form-group__control" for="email">
+                  <input class="form-group__input" id="email" name="email" type="email">
+                  <span class="email-invalid" id="email-invalid">Please enter a valid email address</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label">Your message</label>
+                <div class="form-group__control" for="message">
+                  <textarea class="form-group__input--textarea" id="message" name="message"></textarea>
+                </div>
+              </div>
+              <button class="form-btn" type="submit">Send</button>
+            </form>
+          </section>
+          <section class="contact__item beta">
+            <h2>Registered office address</h2>
+            <p>
+            Kineton House<br>
+            31 Horse Fair<br>
+            Banbury<br>
+            Oxfordshire<br>
+            United Kingdom<br>
+            OX16 0AE</p>
+            <p>Company number: 10447192</p>
+            <p>VAT number: GB259 2102 16</p>
+          </section>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__item">
@@ -119,5 +192,6 @@
       ga('send', 'pageview');
 
     </script>
+    <script src="/scripts/form.js"></script
   </body>
 </html>

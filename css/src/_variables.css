@@ -1,11 +1,23 @@
 :root {
 
-	@custom-media --sm (min-width: 768px);
+	@custom-media --sm (min-width: 30em);
+  @custom-media --md (min-width: 40em);
+  @custom-media --lg (min-width: 50em);
+  @custom-media --xl (min-width: 70em);
+  @custom-media --x2 (min-width: 90em);
 
   --cc-grey: #6e6e6e;
   --cc-white: #fff;
   --cc-yellow: #ffcb08;
+  --cc-purple: #6e408d;
 
+  --cc-grey-dark: color(var(--cc-grey) shade(20));
+  --cc-grey-darker: color(var(--cc-grey) shade(30));
+  --cc-grey-darkest: color(var(--cc-grey) shade(40));
+
+  --cc-grey-light: color(var(--cc-grey) tint(30));
+  --cc-grey-lighter: color(var(--cc-grey) tint(60));
+  --cc-grey-lightest: color(var(--cc-grey) tint(90));
 
 	--container-sm: 40em;
 	--container-xs: 100%;
