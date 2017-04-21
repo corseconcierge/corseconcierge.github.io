@@ -434,6 +434,7 @@ main {
 .strapline {
   margin: 1.5em 0 0;
   font-size: 2em;
+  line-height: 1.2;
   color: var(--cc-yellow);
 }
 
