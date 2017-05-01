@@ -401,7 +401,7 @@ main {
   position: relative;
   background-image:
     linear-gradient(to bottom, transparent 0%, color(#000 a(0.1)) 90%, #000 100%),
-    url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgICA8ZyBmaWxsPSJyZ2JhKDExMCw2NCwxNDEsLjI1KSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgICAgIDxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgPC9nPgo8L3N2Zz4=),
+    url(var(--svg-bg)),
     url('/img/spa.jpg');
   background-size: cover, 5px, cover;
   background-repeat: no-repeat, repeat, no-repeat;
@@ -453,7 +453,7 @@ main {
 .cta {
   display: inline-block;
   margin-top: 1em;
-  padding: 0.5em 3em 0.5em 3em;
+  padding: 0.5em 3em;
   border: none;
   text-shadow: none;
   background-color: var(--cc-yellow);
@@ -464,6 +464,10 @@ main {
     background-color: color(var(--cc-yellow) blackness(20));
     color: #000;
   }
+}
+
+:root {
+  --svg-bg: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgICA8ZyBmaWxsPSJyZ2JhKDExMCw2NCwxNDEsLjI1KSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgICAgIDxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgPC9nPgo8L3N2Zz4=';
 }
 
 .page-header {
@@ -490,26 +494,50 @@ main {
 
   @nest .page-logistics & {
     background-image:
-      url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgICA8ZyBmaWxsPSJyZ2JhKDExMCw2NCwxNDEsLjI1KSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgICAgIDxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgPC9nPgo8L3N2Zz4=),
+      url(var(--svg-bg)),
       url('/img/laptop-purple.jpg');
   }
 
   @nest .page-services & {
     background-image:
-      url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgICA8ZyBmaWxsPSJyZ2JhKDExMCw2NCwxNDEsLjI1KSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgICAgIDxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgPC9nPgo8L3N2Zz4=),
+      url(var(--svg-bg)),
       url('/img/services-purple.jpg');
   }
 
   @nest .page-contact-us & {
     background-image:
-      url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgICA8ZyBmaWxsPSJyZ2JhKDExMCw2NCwxNDEsLjI1KSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgICAgIDxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgPC9nPgo8L3N2Zz4=),
+      url(var(--svg-bg)),
       url('/img/teapot-purple.jpg');
   }
 
   @nest .page-about-us & {
     background-image:
-      url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgICA8ZyBmaWxsPSJyZ2JhKDExMCw2NCwxNDEsLjI1KSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgICAgIDxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiAvPgogICAgPC9nPgo8L3N2Zz4=),
+      url(var(--svg-bg)),
       url('/img/toptrumps-purple.jpg');
+  }
+
+  @nest .page-commercial-strategy & {
+    background-image:
+      url(var(--svg-bg)),
+      url('/img/alarmclock-purple.jpg');
+  }
+
+  @nest .page-business-development & {
+    background-image:
+      url(var(--svg-bg)),
+      url('/img/notebooks-purple.jpg');
+  }
+
+  @nest .page-project-management & {
+    background-image:
+      url(var(--svg-bg)),
+      url('/img/stopwatch-purple.jpg');
+  }
+
+  @nest .page-event-organisation & {
+    background-image:
+      url(var(--svg-bg)),
+      url('/img/bag-purple.jpg');
   }
 
   & :any-link {
